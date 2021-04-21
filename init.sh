@@ -5,7 +5,7 @@ set -e
 GAMECONFIGDIR="/root/.wine/drive_c/users/root/Local Settings/Application Data/FactoryGame/Saved"
 
 mkdir -p /config/gamefiles /config/savefiles /config/savefilebackups "${GAMECONFIGDIR}/Config/WindowsNoEditor" "${GAMECONFIGDIR}/Logs" "${GAMECONFIGDIR}/SaveGames/common" || true
-touch "${GAMECONFIGDIR}/Config/WindowsNoEditor/Engine.ini" "${GAMECONFIGDIR}/Config/WindowsNoEditor/Game.ini" "${GAMECONFIGDIR}/Logs/FactoryGame.log"
+#touch "${GAMECONFIGDIR}/Config/WindowsNoEditor/Engine.ini" "${GAMECONFIGDIR}/Config/WindowsNoEditor/Game.ini" "${GAMECONFIGDIR}/Logs/FactoryGame.log"
 
 if [[ "${STEAMBETA}" == "true" ]]; then
     printf "Experimental flag is set. Experimental will be downloaded instead of Early Access.\\n"
